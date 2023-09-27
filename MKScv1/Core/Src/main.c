@@ -98,26 +98,26 @@ int main(void)
 
   while (1)
   {
-	  uint8_t pole[32] = {1, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0};
+	  uint32_t sos = 0b1010100111011101110010101;
 
-	  for (uint8_t i = 0; i < 31; i++) {
-
-		  if (pole[i] == 0) {
-			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
-			  LL_mDelay(200);
-		  }
-		  else {
+	  for (uint8_t i = 0; i < 31; i++)
+	  {
+		  if (sos & 0b1) {
 			  LL_GPIO_SetOutputPin(LD2_GPIO_Port, LD2_Pin);
-			  LL_mDelay(200);
 		  }
-	  }
+			  else {
+			  LL_GPIO_ResetOutputPin(LD2_GPIO_Port, LD2_Pin);
+		  }
+		  LL_mDelay(200);
 
+		  sos = sos >> 1;
+	  }
+  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
 
 /**
   * @brief System Clock Configuration
