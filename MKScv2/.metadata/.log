@@ -162,3 +162,468 @@ Remote communication error.  Target disconnected.: (undocumented errno 10061).
 java.lang.Exception: Remote communication error.  Target disconnected.: (undocumented errno 10061).
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
 	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:47:01.632
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:47:01.632
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:48:09.307
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:48:09.308
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:49:13.070
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:49:13.070
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:53:12.443
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:53:12.443
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:53:47.210
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:53:47.210
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:55:38.339
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 16:55:38.339
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:02:16.430
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:02:16.430
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:07:53.473
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:07:53.473
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:11:28.753
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:11:28.753
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:11:44.394
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:11:44.394
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:12:00.603
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:12:00.603
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:13:40.361
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:13:40.361
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:24:56.260
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:24:56.260
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:45:21.076
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:45:21.076
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:47:47.222
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2023-10-04 17:47:47.222
+!MESSAGE C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+!STACK 0
+java.io.FileNotFoundException: C:\Temp\xhroch01\MKS\MKScv2\cv2\Debug\cv2.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:806)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:717)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
