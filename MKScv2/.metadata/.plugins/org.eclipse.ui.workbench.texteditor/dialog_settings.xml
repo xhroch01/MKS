@@ -8,6 +8,9 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="blikac"/>
+			<item value="LL_SYSTICK_EnableIT();"/>
+			<item value="volatile"/>
 			<item value="EXTI0_1_IRQHandler()"/>
 			<item value="exti0_1_irqhandler()"/>
 			<item value="exti0_1_irqhandler"/>
