@@ -1,10 +1,10 @@
-16:24:06 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+17:57:26 **** Incremental Build of configuration Debug for project cvicdeni3 ****
 make -j4 all 
 arm-none-eabi-size   cvicdeni3.elf 
    text	   data	    bss	    dec	    hex	filename
-   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+   7532	     20	   1700	   9252	   2424	cvicdeni3.elf
 Finished building: default.size.stdout
  
 
-16:24:07 Build Finished. 0 errors, 0 warnings. (took 311ms)
+17:57:26 Build Finished. 0 errors, 0 warnings. (took 315ms)
 

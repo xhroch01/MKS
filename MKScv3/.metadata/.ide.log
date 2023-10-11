@@ -1845,3 +1845,6 @@
 2023-10-11 15:30:23,080 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 3971mS.
 2023-10-11 15:30:23,080 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
 2023-10-11 15:30:23,083 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-10-11 17:02:27,644 [INFO] Gpio:273 - dependency for GPIO [RCC, SYS, USART2]
+2023-10-11 17:02:27,714 [INFO] DmaTabbedPanel:205 - Cannot restore the selected Tab for DMA
+2023-10-11 17:05:02,033 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 401482720 Bytes (730857472)

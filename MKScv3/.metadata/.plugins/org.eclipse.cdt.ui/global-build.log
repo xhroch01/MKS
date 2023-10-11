@@ -363,3 +363,1150 @@ arm-none-eabi-size   cvicdeni3.elf
    7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
 Finished building: default.size.stdout
  
+16:33:52 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:27:23: error: storage class specified for parameter 'reg_values'
+   27 | static const uint32_t reg_values[3][10] = {
+      |                       ^~~~~~~~~~
+../Core/Src/sct.c:27:1: error: parameter 'reg_values' is initialized
+   27 | static const uint32_t reg_values[3][10] = {
+      | ^~~~~~
+../Core/Src/sct.c:28:9: warning: braces around scalar initializer
+   28 |         {
+      |         ^
+../Core/Src/sct.c:28:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:29:17: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   29 |                 0b0111000000000111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:29:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:30:17: warning: excess elements in scalar initializer
+   30 |                 0b0100000000000001 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:30:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:31:17: warning: excess elements in scalar initializer
+   31 |                 0b0011000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:31:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:32:17: warning: excess elements in scalar initializer
+   32 |                 0b0110000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:32:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:33:17: warning: excess elements in scalar initializer
+   33 |                 0b0100000000001101 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:33:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:34:17: warning: excess elements in scalar initializer
+   34 |                 0b0110000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:34:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:35:17: warning: excess elements in scalar initializer
+   35 |                 0b0111000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:35:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:36:17: warning: excess elements in scalar initializer
+   36 |                 0b0100000000000011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:36:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:37:17: warning: excess elements in scalar initializer
+   37 |                 0b0111000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:37:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:38:17: warning: excess elements in scalar initializer
+   38 |                 0b0110000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:38:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: braces around scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:41:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   41 |             0b0000011101110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:41:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:42:13: warning: excess elements in scalar initializer
+   42 |             0b0000010000010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:42:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:43:13: warning: excess elements in scalar initializer
+   43 |             0b0000001110110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:43:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:44:13: warning: excess elements in scalar initializer
+   44 |             0b0000011010110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:44:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:45:13: warning: excess elements in scalar initializer
+   45 |             0b0000010011010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:45:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:46:13: warning: excess elements in scalar initializer
+   46 |             0b0000011011100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:46:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:47:13: warning: excess elements in scalar initializer
+   47 |             0b0000011111100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:47:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:48:13: warning: excess elements in scalar initializer
+   48 |             0b0000010000110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:48:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:49:13: warning: excess elements in scalar initializer
+   49 |             0b0000011111110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:49:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:50:13: warning: excess elements in scalar initializer
+   50 |             0b0000011011110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:50:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: excess elements in scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: braces around scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:53:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   53 |             0b0111000000000111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:53:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:54:13: warning: excess elements in scalar initializer
+   54 |             0b0100000000000001 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:54:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:55:13: warning: excess elements in scalar initializer
+   55 |             0b0011000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:55:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:56:13: warning: excess elements in scalar initializer
+   56 |             0b0110000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:56:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:57:13: warning: excess elements in scalar initializer
+   57 |             0b0100000000001101 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:57:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:58:13: warning: excess elements in scalar initializer
+   58 |             0b0110000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:58:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:59:13: warning: excess elements in scalar initializer
+   59 |             0b0111000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:59:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:60:13: warning: excess elements in scalar initializer
+   60 |             0b0100000000000011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:60:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:61:13: warning: excess elements in scalar initializer
+   61 |             0b0111000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:61:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:62:13: warning: excess elements in scalar initializer
+   62 |             0b0110000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:62:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: excess elements in scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:26:6: error: old-style parameter declarations in prototyped function definition
+   26 | void sct_value(uint16_t value)
+      |      ^~~~~~~~~
+../Core/Src/sct.c:70: error: expected '{' at end of input
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:35:12 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:27:23: error: storage class specified for parameter 'reg_values'
+   27 | static const uint32_t reg_values[3][10] = {
+      |                       ^~~~~~~~~~
+../Core/Src/sct.c:27:1: error: parameter 'reg_values' is initialized
+   27 | static const uint32_t reg_values[3][10] = {
+      | ^~~~~~
+../Core/Src/sct.c:28:9: warning: braces around scalar initializer
+   28 |         {
+      |         ^
+../Core/Src/sct.c:28:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:29:17: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   29 |                 0b0111000000000111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:29:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:30:17: warning: excess elements in scalar initializer
+   30 |                 0b0100000000000001 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:30:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:31:17: warning: excess elements in scalar initializer
+   31 |                 0b0011000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:31:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:32:17: warning: excess elements in scalar initializer
+   32 |                 0b0110000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:32:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:33:17: warning: excess elements in scalar initializer
+   33 |                 0b0100000000001101 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:33:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:34:17: warning: excess elements in scalar initializer
+   34 |                 0b0110000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:34:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:35:17: warning: excess elements in scalar initializer
+   35 |                 0b0111000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:35:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:36:17: warning: excess elements in scalar initializer
+   36 |                 0b0100000000000011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:36:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:37:17: warning: excess elements in scalar initializer
+   37 |                 0b0111000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:37:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:38:17: warning: excess elements in scalar initializer
+   38 |                 0b0110000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:38:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: braces around scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:41:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   41 |             0b0000011101110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:41:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:42:13: warning: excess elements in scalar initializer
+   42 |             0b0000010000010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:42:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:43:13: warning: excess elements in scalar initializer
+   43 |             0b0000001110110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:43:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:44:13: warning: excess elements in scalar initializer
+   44 |             0b0000011010110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:44:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:45:13: warning: excess elements in scalar initializer
+   45 |             0b0000010011010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:45:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:46:13: warning: excess elements in scalar initializer
+   46 |             0b0000011011100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:46:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:47:13: warning: excess elements in scalar initializer
+   47 |             0b0000011111100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:47:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:48:13: warning: excess elements in scalar initializer
+   48 |             0b0000010000110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:48:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:49:13: warning: excess elements in scalar initializer
+   49 |             0b0000011111110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:49:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:50:13: warning: excess elements in scalar initializer
+   50 |             0b0000011011110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:50:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: excess elements in scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: braces around scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:53:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   53 |             0b0111000000000111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:53:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:54:13: warning: excess elements in scalar initializer
+   54 |             0b0100000000000001 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:54:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:55:13: warning: excess elements in scalar initializer
+   55 |             0b0011000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:55:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:56:13: warning: excess elements in scalar initializer
+   56 |             0b0110000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:56:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:57:13: warning: excess elements in scalar initializer
+   57 |             0b0100000000001101 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:57:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:58:13: warning: excess elements in scalar initializer
+   58 |             0b0110000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:58:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:59:13: warning: excess elements in scalar initializer
+   59 |             0b0111000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:59:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:60:13: warning: excess elements in scalar initializer
+   60 |             0b0100000000000011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:60:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:61:13: warning: excess elements in scalar initializer
+   61 |             0b0111000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:61:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:62:13: warning: excess elements in scalar initializer
+   62 |             0b0110000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:62:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: excess elements in scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:65:1: error: expected declaration specifiers before '}' token
+   65 | }
+      | ^
+../Core/Src/sct.c:26:6: error: old-style parameter declarations in prototyped function definition
+   26 | void sct_value(uint16_t value)
+      |      ^~~~~~~~~
+../Core/Src/sct.c:70: error: expected '{' at end of input
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:36:29 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:27:23: error: storage class specified for parameter 'reg_values'
+   27 | static const uint32_t reg_values[3][10] = {
+      |                       ^~~~~~~~~~
+../Core/Src/sct.c:27:1: error: parameter 'reg_values' is initialized
+   27 | static const uint32_t reg_values[3][10] = {
+      | ^~~~~~
+../Core/Src/sct.c:28:9: warning: braces around scalar initializer
+   28 |         {
+      |         ^
+../Core/Src/sct.c:28:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:29:17: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   29 |                 0b0111000000000111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:29:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:30:17: warning: excess elements in scalar initializer
+   30 |                 0b0100000000000001 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:30:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:31:17: warning: excess elements in scalar initializer
+   31 |                 0b0011000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:31:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:32:17: warning: excess elements in scalar initializer
+   32 |                 0b0110000000001011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:32:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:33:17: warning: excess elements in scalar initializer
+   33 |                 0b0100000000001101 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:33:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:34:17: warning: excess elements in scalar initializer
+   34 |                 0b0110000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:34:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:35:17: warning: excess elements in scalar initializer
+   35 |                 0b0111000000001110 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:35:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:36:17: warning: excess elements in scalar initializer
+   36 |                 0b0100000000000011 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:36:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:37:17: warning: excess elements in scalar initializer
+   37 |                 0b0111000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:37:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:38:17: warning: excess elements in scalar initializer
+   38 |                 0b0110000000001111 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:38:17: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: braces around scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:41:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   41 |             0b0000011101110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:41:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:42:13: warning: excess elements in scalar initializer
+   42 |             0b0000010000010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:42:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:43:13: warning: excess elements in scalar initializer
+   43 |             0b0000001110110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:43:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:44:13: warning: excess elements in scalar initializer
+   44 |             0b0000011010110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:44:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:45:13: warning: excess elements in scalar initializer
+   45 |             0b0000010011010000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:45:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:46:13: warning: excess elements in scalar initializer
+   46 |             0b0000011011100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:46:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:47:13: warning: excess elements in scalar initializer
+   47 |             0b0000011111100000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:47:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:48:13: warning: excess elements in scalar initializer
+   48 |             0b0000010000110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:48:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:49:13: warning: excess elements in scalar initializer
+   49 |             0b0000011111110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:49:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:50:13: warning: excess elements in scalar initializer
+   50 |             0b0000011011110000 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:50:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:40:9: warning: excess elements in scalar initializer
+   40 |         {
+      |         ^
+../Core/Src/sct.c:40:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: braces around scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:53:13: warning: initialization of 'const uint32_t (*)[10]' {aka 'const long unsigned int (*)[10]'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   53 |             0b0111000000000111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:53:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:54:13: warning: excess elements in scalar initializer
+   54 |             0b0100000000000001 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:54:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:55:13: warning: excess elements in scalar initializer
+   55 |             0b0011000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:55:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:56:13: warning: excess elements in scalar initializer
+   56 |             0b0110000000001011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:56:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:57:13: warning: excess elements in scalar initializer
+   57 |             0b0100000000001101 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:57:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:58:13: warning: excess elements in scalar initializer
+   58 |             0b0110000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:58:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:59:13: warning: excess elements in scalar initializer
+   59 |             0b0111000000001110 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:59:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:60:13: warning: excess elements in scalar initializer
+   60 |             0b0100000000000011 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:60:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:61:13: warning: excess elements in scalar initializer
+   61 |             0b0111000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:61:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:62:13: warning: excess elements in scalar initializer
+   62 |             0b0110000000001111 << 0,
+      |             ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:62:13: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:52:9: warning: excess elements in scalar initializer
+   52 |         {
+      |         ^
+../Core/Src/sct.c:52:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:64:9: error: expected ',' or ';' at end of input
+   64 |         }
+      |         ^
+../Core/Src/sct.c:26:6: error: old-style parameter declarations in prototyped function definition
+   26 | void sct_value(uint16_t value)
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:37:06 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:66:1: error: expected ',' or ';' before '}' token
+   66 | }
+      | ^
+../Core/Src/sct.c:66:1: error: expected declaration or statement at end of input
+../Core/Src/sct.c:28:23: warning: unused variable 'reg_values' [-Wunused-variable]
+   28 | static const uint32_t reg_values[3][10] = {
+      |                       ^~~~~~~~~~
+At top level:
+../Core/Src/sct.c:28:23: warning: 'reg_values' defined but not used [-Wunused-const-variable=]
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:37:38 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:28:31: warning: unused variable 'reg_values' [-Wunused-variable]
+   28 |         static const uint32_t reg_values[3][10] = {
+      |                               ^~~~~~~~~~
+At top level:
+../Core/Src/sct.c:28:31: warning: 'reg_values' defined but not used [-Wunused-const-variable=]
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+16:44:07 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:66:9: error: 'reg' undeclared (first use in this function)
+   66 |         reg |= reg_values[0][value % 10];               /* jednotky */
+      |         ^~~
+../Core/Src/sct.c:66:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:44:33 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:66:9: error: 'reg' undeclared (first use in this function)
+   66 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:66:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:45:16 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:29:9: error: 'reg' undeclared (first use in this function)
+   29 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:29:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:29:16: error: 'reg_values' undeclared (first use in this function)
+   29 |         reg |= reg_values[0][value % 10];
+      |                ^~~~~~~~~~
+../Core/Src/sct.c:33:31: warning: unused variable 'reg_values' [-Wunused-variable]
+   33 |         static const uint32_t reg_values[3][10] = {
+      |                               ^~~~~~~~~~
+At top level:
+../Core/Src/sct.c:33:31: warning: 'reg_values' defined but not used [-Wunused-const-variable=]
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:47:23 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:17: error: 'sct_value' undeclared (first use in this function)
+   97 |         sct_led(sct_value);
+      |                 ^~~~~~~~~
+../Core/Src/main.c:97:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:51:00 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:17: error: 'reg' undeclared (first use in this function)
+   97 |         sct_led(reg);
+      |                 ^~~
+../Core/Src/main.c:97:17: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:51:13 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:17: error: 'reg_values' undeclared (first use in this function)
+   97 |         sct_led(reg_values);
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:97:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:51:21 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:17: error: 'reg_values' undeclared (first use in this function)
+   97 |         sct_led(reg_values);
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:97:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:52:46 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:28:9: error: 'reg' undeclared (first use in this function)
+   28 |         reg = sct_value();
+      |         ^~~
+../Core/Src/sct.c:28:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:28:15: error: too few arguments to function 'sct_value'
+   28 |         reg = sct_value();
+      |               ^~~~~~~~~
+../Core/Src/sct.c:26:6: note: declared here
+   26 | void sct_value(uint16_t value)
+      |      ^~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:97:17: error: 'reg_values' undeclared (first use in this function)
+   97 |         sct_led(reg_values);
+      |                 ^~~~~~~~~~
+../Core/Src/main.c:97:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:55:49 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:25: error: 'reg_values' undeclared (first use in this function)
+  112 |                 sct_led(reg_values);
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:05:14 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0] [value % 10];
+      |         ^~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:25: error: 'reg_values' undeclared (first use in this function)
+  112 |                 sct_led(reg_values);
+      |                         ^~~~~~~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:13:45 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:25: error: 'reg_value' undeclared (first use in this function)
+  112 |                 sct_led(reg_value);
+      |                         ^~~~~~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   67 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:69:9: error: 'reg' undeclared (first use in this function)
+   69 |         reg |= reg_values[0] [value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:13:54 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:25: error: 'reg_value' undeclared (first use in this function)
+  112 |                 sct_led(reg_value);
+      |                         ^~~~~~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   67 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sct.c:69:9: error: 'reg' undeclared (first use in this function)
+   69 |         reg |= reg_values[0] [value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:22:58 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:25: error: 'reg_value' undeclared (first use in this function)
+  107 |                 sct_led(reg_value);
+      |                         ^~~~~~~~~
+../Core/Src/main.c:107:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   67 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:69:9: error: 'reg' undeclared (first use in this function)
+   69 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:23:42 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:25: error: 'reg_value' undeclared (first use in this function)
+  107 |                 sct_led(reg_value);
+      |                         ^~~~~~~~~
+../Core/Src/main.c:107:25: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   67 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:69:9: error: 'reg' undeclared (first use in this function)
+   69 |         reg |= reg_values[0] [value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:24:16 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:67:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   67 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:67:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:69:9: error: 'reg' undeclared (first use in this function)
+   69 |         reg |= reg_values[0] [value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:24:37 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:70:9: error: 'reg' undeclared (first use in this function)
+   70 |         reg |= reg_values[1] [(value / 10) % 10];
+      |         ^~~
+../Core/Src/sct.c:70:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:24:52 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:71:9: error: 'reg' undeclared (first use in this function)
+   71 |         reg |= reg_values[2] [value / 100];
+      |         ^~~
+../Core/Src/sct.c:71:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:25:17 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:28:31: warning: unused variable 'reg_values' [-Wunused-variable]
+   28 |         static const uint32_t reg_values[3][10] = {
+      |                               ^~~~~~~~~~
+At top level:
+../Core/Src/sct.c:28:31: warning: 'reg_values' defined but not used [-Wunused-const-variable=]
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:25:45 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:25:51 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:26:43 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:67:9: warning: "/*" within comment [-Wcomment]
+   67 |         /* uint32_t_reg_value; */
+      |          
+../Core/Src/sct.c:73:1: error: expected identifier or '(' before '}' token
+   73 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:26:56 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:67:9: warning: "/*" within comment [-Wcomment]
+   67 |         /* uint32_t_reg_value; */
+      |          
+../Core/Src/sct.c:73:1: error: unterminated comment
+   73 | /* }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:27:21 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:27:44 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:27:51 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7204	     20	   1700	   8924	   22dc	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:28:50 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:17: error: too few arguments to function 'sct_led'
+  107 |                 sct_led();
+      |                 ^~~~~~~
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/sct.h:12:6: note: declared here
+   12 | void sct_led(uint32_t value);
+      |      ^~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:29:21 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:29:58 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:30:27 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:30:33 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:31:40 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:25: warning: passing argument 1 of 'sct_led' makes integer from pointer without a cast [-Wint-conversion]
+  107 |                 sct_led(sct_led);
+      |                         ^~~~~~~
+      |                         |
+      |                         void (*)(uint32_t) {aka void (*)(long unsigned int)}
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/sct.h:12:23: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'void (*)(uint32_t)' {aka 'void (*)(long unsigned int)'}
+   12 | void sct_led(uint32_t value);
+      |              ~~~~~~~~~^~~~~
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:28:31: warning: unused variable 'reg_values' [-Wunused-variable]
+   28 |         static const uint32_t reg_values[3][10] = {
+      |                               ^~~~~~~~~~
+At top level:
+../Core/Src/sct.c:28:31: warning: 'reg_values' defined but not used [-Wunused-const-variable=]
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     20	   1700	   8936	   22e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:32:19 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:25: error: 'sct_value' undeclared (first use in this function)
+  107 |                 sct_led(sct_value);
+      |                         ^~~~~~~~~
+../Core/Src/main.c:107:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:35:03 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:25: warning: passing argument 1 of 'sct_led' makes integer from pointer without a cast [-Wint-conversion]
+  107 |                 sct_led(sct_value);
+      |                         ^~~~~~~~~
+      |                         |
+      |                         void (*)(uint16_t) {aka void (*)(short unsigned int)}
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/sct.h:12:23: note: expected 'uint32_t' {aka 'long unsigned int'} but argument is of type 'void (*)(uint16_t)' {aka 'void (*)(short unsigned int)'}
+   12 | void sct_led(uint32_t value);
+      |              ~~~~~~~~~^~~~~
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:66:9: error: 'uint32_t_reg_value' undeclared (first use in this function)
+   66 |         uint32_t_reg_value;
+      |         ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:66:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:67:9: error: 'reg' undeclared (first use in this function)
+   67 |         reg |= reg_values[0][value % 10];
+      |         ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:35:50 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7472	     20	   1700	   9192	   23e8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:39:08 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7480	     20	   1700	   9200	   23f0	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:43:23 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7488	     20	   1700	   9208	   23f8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:43:29 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7488	     20	   1700	   9208	   23f8	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+17:50:12 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:76: error: 'value' undeclared (first use in this function)
+  111 |                         HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & 1));
+      |                                                                            ^~~~~
+../Core/Src/main.c:111:76: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:50:32 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:86: error: invalid operands to binary & (have 'void (*)(uint16_t)' {aka 'void (*)(short unsigned int)'} and 'int')
+  111 |                         HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (sct_value & 1));
+      |                                                                            ~~~~~~~~~ ^
+      |                                                                            |
+      |                                                                            void (*)(uint16_t) {aka void (*)(short unsigned int)}
+../Core/Src/main.c:112:25: error: 'value' undeclared (first use in this function)
+  112 |                         value >>= 999;
+      |                         ^~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:50:53 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:86: error: invalid operands to binary & (have 'void (*)(uint16_t)' {aka 'void (*)(short unsigned int)'} and 'int')
+  111 |                         HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (sct_value & 1));
+      |                                                                            ~~~~~~~~~ ^
+      |                                                                            |
+      |                                                                            void (*)(uint16_t) {aka void (*)(short unsigned int)}
+../Core/Src/main.c:112:25: error: 'value' undeclared (first use in this function)
+  112 |                         value >>= 1;
+      |                         ^~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:51:04 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:76: error: 'value' undeclared (first use in this function)
+  111 |                         HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (value & 1));
+      |                                                                            ^~~~~
+../Core/Src/main.c:111:76: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:51:33 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:86: error: invalid operands to binary & (have 'void (*)(uint16_t)' {aka 'void (*)(short unsigned int)'} and 'int')
+  111 |                         HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_SDI_Pin, (sct_value & 1));
+      |                                                                            ~~~~~~~~~ ^
+      |                                                                            |
+      |                                                                            void (*)(uint16_t) {aka void (*)(short unsigned int)}
+../Core/Src/main.c:112:25: error: 'value' undeclared (first use in this function)
+  112 |                         value >>= 1;
+      |                         ^~~~~
+../Core/Src/main.c:112:25: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:57:17 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cvicdeni3.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv3\cvicdeni3\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cvicdeni3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cvicdeni3.elf
+ 
+arm-none-eabi-size   cvicdeni3.elf 
+arm-none-eabi-objdump -h -S  cvicdeni3.elf  > "cvicdeni3.list"
+   text	   data	    bss	    dec	    hex	filename
+   7532	     20	   1700	   9252	   2424	cvicdeni3.elf
+Finished building: default.size.stdout
+ 
+Finished building: cvicdeni3.list
+ 
+17:57:26 **** Incremental Build of configuration Debug for project cvicdeni3 ****
+make -j4 all 
+arm-none-eabi-size   cvicdeni3.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7532	     20	   1700	   9252	   2424	cvicdeni3.elf
+Finished building: default.size.stdout
+ 

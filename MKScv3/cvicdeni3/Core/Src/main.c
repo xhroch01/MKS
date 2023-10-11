@@ -89,19 +89,11 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
+
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+
   /* USER CODE BEGIN 2 */
-
-	sct_init();
-	sct_led(0x7A5C36DE);
-	HAL_Delay(1000);
-
- /* void sct_led(uint32_value); */
- /* sct_init(sct_led(0)); */
-
-  /* HAL_GPIO_WritePin(SCT_CLK_GPIO_Port, SCT_CLK_Pin, 1); */
-
 
   /* USER CODE END 2 */
 
@@ -110,6 +102,16 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+
+		sct_init();
+		sct_value(111);
+		HAL_Delay(1000);
+
+		for (uint32_t i = 0; i < 1000; i = i + 111) {
+			sct_value(i);
+			HAL_Delay(1000);
+		}
+
 
     /* USER CODE BEGIN 3 */
   }
