@@ -1,0 +1,863 @@
+15:35:10 **** Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f030r8tx.d" -MT"Core/Startup/startup_stm32f030r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f030r8tx.o" "../Core/Startup/startup_stm32f030r8tx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c:21:10: error: #include expects "FILENAME" or <FILENAME>
+   21 | #include sct.c
+      |          ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:48:52 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/main.c:21:10: error: #include expects "FILENAME" or <FILENAME>
+   21 | #include sct.c
+      |          ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:49:43 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:16: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+  113 |           void sct_value(uint16_t value, uint8_t led);
+      |                ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:50:33 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot * (500+1) / 4096, raw_pot * 9 / 4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:51:17 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:52:00 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:52:03 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:53:14 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:53:35 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:59:02 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Src/sct.c:65:6: note: declared here
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+15:59:10 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'sct_value':
+../Core/Src/main.c:117:11: error: expected declaration specifiers before 'sct_value'
+  117 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+../Core/Src/main.c:118:11: error: expected declaration specifiers before 'HAL_Delay'
+  118 |           HAL_Delay(50);
+      |           ^~~~~~~~~
+../Core/Src/main.c:120:11: error: expected declaration specifiers before 'reg_values'
+  120 |           reg_values[43215678];
+      |           ^~~~~~~~~~
+../Core/Src/main.c:121:11: error: expected declaration specifiers before 'reg'
+  121 |           reg |= reg_values[3][led];
+      |           ^~~
+../Core/Src/main.c:124:3: error: expected declaration specifiers before '}' token
+  124 |   }
+      |   ^
+../Core/Src/main.c:126:1: error: expected declaration specifiers before '}' token
+  126 | }
+      | ^
+../Core/Src/main.c:133:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | {
+      | ^
+../Core/Src/main.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+../Core/Src/main.c:228:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  228 | {
+      | ^
+../Core/Src/main.c:263:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  263 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:340: error: expected '{' at end of input
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+  321 | }
+      | ^
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' used but never defined
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' used but never defined
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_ADC_Init' used but never defined
+   56 | static void MX_ADC_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:115:16: warning: 'sct_value' defined but not used [-Wunused-function]
+  115 |           void sct_value(uint8_t led)
+      |                ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:00:21 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'sct_value':
+../Core/Src/main.c:117:11: error: expected declaration specifiers before 'sct_value'
+  117 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+../Core/Src/main.c:118:11: error: expected declaration specifiers before 'HAL_Delay'
+  118 |           HAL_Delay(50);
+      |           ^~~~~~~~~
+../Core/Src/main.c:120:11: error: expected declaration specifiers before 'reg_values'
+  120 |           reg_values[43215678];
+      |           ^~~~~~~~~~
+../Core/Src/main.c:121:11: error: expected declaration specifiers before 'reg'
+  121 |           reg |= reg_values[3][led];
+      |           ^~~
+../Core/Src/main.c:124:3: error: expected declaration specifiers before '}' token
+  124 |   }
+      |   ^
+../Core/Src/main.c:126:1: error: expected declaration specifiers before '}' token
+  126 | }
+      | ^
+../Core/Src/main.c:133:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | {
+      | ^
+../Core/Src/main.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+../Core/Src/main.c:228:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  228 | {
+      | ^
+../Core/Src/main.c:263:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  263 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:340: error: expected '{' at end of input
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+  321 | }
+      | ^
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' used but never defined
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' used but never defined
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_ADC_Init' used but never defined
+   56 | static void MX_ADC_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:115:16: warning: 'sct_value' defined but not used [-Wunused-function]
+  115 |           void sct_value(uint8_t led)
+      |                ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:01:49 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'sct_value':
+../Core/Src/main.c:117:11: error: expected declaration specifiers before 'sct_value'
+  117 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+../Core/Src/main.c:118:11: error: expected declaration specifiers before 'HAL_Delay'
+  118 |           HAL_Delay(50);
+      |           ^~~~~~~~~
+../Core/Src/main.c:120:11: error: expected declaration specifiers before 'reg_values'
+  120 |           reg_values[43215678];
+      |           ^~~~~~~~~~
+../Core/Src/main.c:121:11: error: expected declaration specifiers before 'reg'
+  121 |           reg |= reg_values[3][led];
+      |           ^~~
+../Core/Src/main.c:124:3: error: expected declaration specifiers before '}' token
+  124 |   }
+      |   ^
+../Core/Src/main.c:126:1: error: expected declaration specifiers before '}' token
+  126 | }
+      | ^
+../Core/Src/main.c:133:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | {
+      | ^
+../Core/Src/main.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+../Core/Src/main.c:228:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  228 | {
+      | ^
+../Core/Src/main.c:263:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  263 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:340: error: expected '{' at end of input
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+  321 | }
+      | ^
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' used but never defined
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' used but never defined
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_ADC_Init' used but never defined
+   56 | static void MX_ADC_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:115:16: warning: 'sct_value' defined but not used [-Wunused-function]
+  115 |           void sct_value(uint8_t led)
+      |                ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:23:07 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'sct_value':
+../Core/Src/main.c:117:11: error: expected declaration specifiers before 'sct_value'
+  117 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+../Core/Src/main.c:118:11: error: expected declaration specifiers before 'HAL_Delay'
+  118 |           HAL_Delay(50);
+      |           ^~~~~~~~~
+../Core/Src/main.c:120:11: error: expected declaration specifiers before 'reg_values'
+  120 |           reg_values[43215678];
+      |           ^~~~~~~~~~
+../Core/Src/main.c:121:11: error: expected declaration specifiers before 'reg'
+  121 |           reg |= reg_values[3][led];
+      |           ^~~
+../Core/Src/main.c:124:3: error: expected declaration specifiers before '}' token
+  124 |   }
+      |   ^
+../Core/Src/main.c:126:1: error: expected declaration specifiers before '}' token
+  126 | }
+      | ^
+../Core/Src/main.c:133:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | {
+      | ^
+../Core/Src/main.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+../Core/Src/main.c:228:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  228 | {
+      | ^
+../Core/Src/main.c:263:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  263 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:340: error: expected '{' at end of input
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+  321 | }
+      | ^
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' used but never defined
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' used but never defined
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_ADC_Init' used but never defined
+   56 | static void MX_ADC_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:115:16: warning: 'sct_value' defined but not used [-Wunused-function]
+  115 |           void sct_value(uint8_t led)
+      |                ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:23:42 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'sct_value':
+../Core/Src/main.c:117:11: error: expected declaration specifiers before 'sct_value'
+  117 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+../Core/Src/main.c:118:11: error: expected declaration specifiers before 'HAL_Delay'
+  118 |           HAL_Delay(50);
+      |           ^~~~~~~~~
+../Core/Src/main.c:120:11: error: expected declaration specifiers before 'reg_values'
+  120 |           reg_values[43215678];
+      |           ^~~~~~~~~~
+../Core/Src/main.c:121:11: error: expected declaration specifiers before 'reg'
+  121 |           reg |= reg_values[3][led];
+      |           ^~~
+../Core/Src/main.c:124:3: error: expected declaration specifiers before '}' token
+  124 |   }
+      |   ^
+../Core/Src/main.c:126:1: error: expected declaration specifiers before '}' token
+  126 | }
+      | ^
+../Core/Src/main.c:133:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | {
+      | ^
+../Core/Src/main.c:174:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | {
+      | ^
+../Core/Src/main.c:228:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  228 | {
+      | ^
+../Core/Src/main.c:263:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  263 | {
+      | ^
+../Core/Src/main.c:313:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  313 | {
+      | ^
+../Core/Src/main.c:340: error: expected '{' at end of input
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+  321 | }
+      | ^
+../Core/Src/main.c:321:1: error: expected declaration or statement at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:54:13: warning: 'MX_GPIO_Init' used but never defined
+   54 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:55:13: warning: 'MX_USART2_UART_Init' used but never defined
+   55 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:56:13: warning: 'MX_ADC_Init' used but never defined
+   56 | static void MX_ADC_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:115:16: warning: 'sct_value' defined but not used [-Wunused-function]
+  115 |           void sct_value(uint8_t led)
+      |                ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:24:05 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot * (500 + 1) / 4096, raw_pot * 9 / 4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+../Core/Src/sct.c:75:6: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   75 | void sct_value(uint16_t value, uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:65:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:76:9: error: 'reg' undeclared (first use in this function)
+   76 |         reg |= reg_values[4][led];
+      |         ^~~
+../Core/Src/sct.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:24:38 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot * (500+1) / 4096, raw_pot * 9 / 4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+../Core/Src/sct.c:75:6: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   75 | void sct_value(uint16_t value, uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:65:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   65 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:76:9: error: 'reg' undeclared (first use in this function)
+   76 |         reg |= reg_values[4][led];
+      |         ^~~
+../Core/Src/sct.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:25:10 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot * (500+1) / 4096, raw_pot * 9 / 4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:26:13 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: error: too many arguments to function 'sct_value'
+  116 |           sct_value(raw_pot*501/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:26:39 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: too many arguments to function 'sct_value'
+  113 |           sct_value(raw_pot*501/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:28:40 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: too many arguments to function 'sct_value'
+  113 |           sct_value(raw_pot*501/4096, 9*raw_pot/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:44:01 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: too many arguments to function 'sct_value'
+  113 |           sct_value(raw_pot*501/4096, 9*raw_pot/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:44:05 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: too many arguments to function 'sct_value'
+  113 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:45:33 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:11: error: too many arguments to function 'sct_value'
+  113 |           sct_value(raw_pot*(500+1)/4096, raw_pot*9/4096);
+      |           ^~~~~~~~~
+In file included from ../Core/Src/main.c:21:
+../Core/Inc/sct.h:13:6: note: declared here
+   13 | void sct_value(uint16_t value);
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:45:59 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:71:30: error: 'LED' undeclared (first use in this function)
+   71 |         reg |= reg_values[3][LED];
+      |                              ^~~
+../Core/Src/sct.c:71:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:48:23 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:71:30: error: 'LED' undeclared (first use in this function)
+   71 |         reg |= reg_values[3][LED];
+      |                              ^~~
+../Core/Src/sct.c:71:30: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: warning: implicit declaration of function 'sct_LED'; did you mean 'sct_led'? [-Wimplicit-function-declaration]
+  116 |           sct_LED(raw_pot*9/4096);
+      |           ^~~~~~~
+      |           sct_led
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:48:39 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Temp/xhroch01/MKS/MKScv4/Cviceni4/Debug/../Core/Src/main.c:116: undefined reference to `sct_LED'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Cviceni4.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:48:50 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+16:49:03 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+16:59:18 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: warning: implicit declaration of function 'sct_LED'; did you mean 'sct_led'? [-Wimplicit-function-declaration]
+  116 |           sct_LED(raw_pot*9/4096);
+      |           ^~~~~~~
+      |           sct_led
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Temp/xhroch01/MKS/MKScv4/Cviceni4/Debug/../Core/Src/main.c:116: undefined reference to `sct_LED'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Cviceni4.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:59:35 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:11: warning: implicit declaration of function 'sct_LED'; did you mean 'sct_led'? [-Wimplicit-function-declaration]
+  116 |           sct_LED(raw_pot*(9/4096));
+      |           ^~~~~~~
+      |           sct_led
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/appz/ST/STM32CubeIDE_1.10.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Temp/xhroch01/MKS/MKScv4/Cviceni4/Debug/../Core/Src/main.c:116: undefined reference to `sct_LED'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: Cviceni4.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:00:22 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10408	     20	   1772	  12200	   2fa8	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:00:26 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10408	     20	   1772	  12200	   2fa8	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:01:15 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10416	     20	   1772	  12208	   2fb0	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:01:20 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10416	     20	   1772	  12208	   2fb0	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:01:51 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:03:10 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:71:30: error: 'led' undeclared (first use in this function)
+   71 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:71:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:05:47 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:64:9: warning: excess elements in array initializer
+   64 |         {
+      |         ^
+../Core/Src/sct.c:64:9: note: (near initialization for 'reg_values')
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:06:13 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:06:20 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10392	     20	   1772	  12184	   2f98	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:17:46 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:18:00 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+   9940	     20	   1772	  11732	   2dd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:18:04 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9940	     20	   1772	  11732	   2dd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:18:41 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9940	     20	   1772	  11732	   2dd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:18:47 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9940	     20	   1772	  11732	   2dd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:18:50 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9940	     20	   1772	  11732	   2dd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+17:20:30 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:11: warning: implicit declaration of function 'sct_value' [-Wimplicit-function-declaration]
+  114 |           sct_value(raw_pot*(500+1)/4096);
+      |           ^~~~~~~~~
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10452	     20	   1772	  12244	   2fd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+17:20:57 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10452	     20	   1772	  12244	   2fd4	Cviceni4.elf
+Finished building: default.size.stdout
+ 
