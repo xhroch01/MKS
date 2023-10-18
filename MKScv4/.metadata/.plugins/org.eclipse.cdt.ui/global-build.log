@@ -861,3 +861,315 @@ arm-none-eabi-size   Cviceni4.elf
   10452	     20	   1772	  12244	   2fd4	Cviceni4.elf
 Finished building: default.size.stdout
  
+17:37:18 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:83:30: error: 'led' undeclared (first use in this function)
+   83 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:83:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:42:33 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[4][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:42:49 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:43:54 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   89 | void sct_value(uint16_t value, uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:78:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   78 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:44:37 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_led'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   89 | void sct_led(uint16_t value, uint8_t led) {
+      |      ^~~~~~~
+../Core/Src/sct.c:14:6: note: previous definition of 'sct_led' with type 'void(uint32_t)' {aka 'void(long unsigned int)'}
+   14 | void sct_led(uint32_t value)
+      |      ^~~~~~~
+../Core/Src/sct.c: In function 'sct_led':
+../Core/Src/sct.c:93:9: error: too few arguments to function 'sct_led'
+   93 |         sct_led(reg);
+      |         ^~~~~~~
+../Core/Src/sct.c:89:6: note: declared here
+   89 | void sct_led(uint16_t value, uint8_t led) {
+      |      ^~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:44:51 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_led'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   89 | void sct_led(uint16_t value, uint8_t led) {
+      |      ^~~~~~~
+../Core/Src/sct.c:14:6: note: previous definition of 'sct_led' with type 'void(uint32_t)' {aka 'void(long unsigned int)'}
+   14 | void sct_led(uint32_t value)
+      |      ^~~~~~~
+../Core/Src/sct.c: In function 'sct_led':
+../Core/Src/sct.c:91:9: error: 'reg' undeclared (first use in this function)
+   91 |         reg |= reg_values[3][led];
+      |         ^~~
+../Core/Src/sct.c:91:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:92:9: error: too few arguments to function 'sct_led'
+   92 |         sct_led(reg);
+      |         ^~~~~~~
+../Core/Src/sct.c:89:6: note: declared here
+   89 | void sct_led(uint16_t value, uint8_t led) {
+      |      ^~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:45:32 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   89 | void sct_value(uint16_t value, uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:78:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   78 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:47:04 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_value'; have 'void(uint16_t,  uint8_t)' {aka 'void(short unsigned int,  unsigned char)'}
+   89 | void sct_value(uint16_t value, uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:78:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   78 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:47:42 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c:89:6: error: conflicting types for 'sct_value'; have 'void(uint8_t)' {aka 'void(unsigned char)'}
+   89 | void sct_value(uint8_t led) {
+      |      ^~~~~~~~~
+../Core/Src/sct.c:78:6: note: previous definition of 'sct_value' with type 'void(uint16_t)' {aka 'void(short unsigned int)'}
+   78 | void sct_value(uint16_t value) {
+      |      ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:57:47 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:9: error: 'reg1' undeclared (first use in this function); did you mean 'reg'?
+   84 |         reg1 |= reg_values[3][led];
+      |         ^~~~
+      |         reg
+../Core/Src/sct.c:84:9: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/sct.c:84:31: error: 'led' undeclared (first use in this function)
+   84 |         reg1 |= reg_values[3][led];
+      |                               ^~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:58:13 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:59:14 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c:63:9: warning: excess elements in array initializer
+   63 |         {
+      |         ^
+../Core/Src/sct.c:63:9: note: (near initialization for 'reg_values')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[3][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:59:56 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+../Core/Src/sct.c: In function 'sct_value':
+../Core/Src/sct.c:84:30: error: 'led' undeclared (first use in this function)
+   84 |         reg |= reg_values[4][led];
+      |                              ^~~
+../Core/Src/sct.c:84:30: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/sct.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+18:02:20 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:11: warning: implicit declaration of function 'sct_value' [-Wimplicit-function-declaration]
+  114 |           sct_value(raw_pot*(500+1)/4096, raw_pot*(8+1)/4096);
+      |           ^~~~~~~~~
+../Core/Src/sct.c:74:17: warning: excess elements in array initializer
+   74 |                 0b0000111111111000 << 16,
+      |                 ^~~~~~~~~~~~~~~~~~
+../Core/Src/sct.c:74:17: note: (near initialization for 'reg_values[3]')
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10528	     20	   1772	  12320	   3020	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+18:02:53 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10532	     20	   1772	  12324	   3024	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+18:02:56 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10532	     20	   1772	  12324	   3024	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+18:04:14 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/sct.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sct.d" -MT"Core/Src/sct.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sct.o"
+arm-none-eabi-gcc -o "Cviceni4.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv4\Cviceni4\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Cviceni4.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Cviceni4.elf
+ 
+arm-none-eabi-size   Cviceni4.elf 
+arm-none-eabi-objdump -h -S  Cviceni4.elf  > "Cviceni4.list"
+   text	   data	    bss	    dec	    hex	filename
+  10532	     20	   1772	  12324	   3024	Cviceni4.elf
+Finished building: default.size.stdout
+ 
+Finished building: Cviceni4.list
+ 
+18:04:17 **** Incremental Build of configuration Debug for project Cviceni4 ****
+make -j4 all 
+arm-none-eabi-size   Cviceni4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10532	     20	   1772	  12324	   3024	Cviceni4.elf
+Finished building: default.size.stdout
+ 

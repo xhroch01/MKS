@@ -23,7 +23,7 @@ void sct_led(uint32_t value)
 	HAL_GPIO_WritePin(SCT_SDI_GPIO_Port, SCT_NLA_Pin, 0);
 }
 
-static const uint32_t reg_values[3][10] = {
+static const uint32_t reg_values[4][10] = {
 	{
 		0b0111000000000111 << 16,
 		0b0100000000000001 << 16,
@@ -60,42 +60,25 @@ static const uint32_t reg_values[3][10] = {
 	    0b0111000000001111 << 0,
 	    0b0110000000001111 << 0,
 	},
-	/* {
-		0b0000000000000001 << 0,
-		0b0100000000000010 << 0,
-		0b0000000000000011 << 0,
-		0b0000000000000100 << 0,
-		0b0000000000000101 << 0,
-		0b0000000000000110 << 0,
-		0b0000000000000111 << 0,
-		0b0000000000001000 << 0,
-		0b0000000000001001 << 0,
-		0b0000000000001010 << 0,
-		},
-		*/
+	{
+		0b0000000000000000 << 16,
+		0b0000000100000000 << 16,
+		0b0000000110000000 << 16,
+		0b0000001110000000 << 16,
+		0b0000011110000000 << 16,
+		0b0000111110000000 << 16,
+		0b0000111110000000 << 16,
+		0b0000111111000000 << 16,
+		0b0000111111100000 << 16,
+	},
 };
 
-void sct_value(uint16_t value) {
-	uint32_t reg=0;
+void sct_value(uint16_t value, uint8_t led) {
+	uint32_t reg = 0;
 
 	reg |= reg_values[2][value % 10];
 	reg |= reg_values[1][value / 10 % 10];
 	reg |= reg_values[0][value / 100 % 10];
-	// reg |= reg_values[3][led];
-
+	reg |= reg_values[3][led];
 	sct_led(reg);
 }
-
-/* void sct_value(uint16_t value, uint8_t led) {
-	reg |= reg_values[4][led];
-	reg |= reg_values[3][led];
-	reg |= reg_values[2][led];
-	reg |= reg_values[1][led];
-	reg |= reg_values[5][led];
-	reg |= reg_values[6][led];
-	reg |= reg_values[7][led];
-	reg |= reg_values[8][led];
-	reg |= reg_values[3][led];
-}
-
-*/
