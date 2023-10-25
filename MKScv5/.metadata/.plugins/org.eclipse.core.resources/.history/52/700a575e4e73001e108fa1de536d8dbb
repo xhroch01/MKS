@@ -72,7 +72,7 @@ static void uart_process_command(char *cmd)
 
 	if (strcasecmp(token, "HELLO") == 0)
 	{
-		printf("Hello World!\n");
+		printf("Komunikace OK\n");
 	}
 
 	else if (strcasecmp(token, "LED1") == 0)

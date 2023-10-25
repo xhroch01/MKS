@@ -825,3 +825,731 @@ arm-none-eabi-size   cviceni5.elf
   14044	    112	   2432	  16588	   40cc	cviceni5.elf
 Finished building: default.size.stdout
  
+16:47:03 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:70:9: error: expected declaration specifiers before 'token'
+   70 |         token = strtok(cmd, " ");
+      |         ^~~~~
+../Core/Src/main.c:71:9: error: expected declaration specifiers before 'if'
+   71 |         if (strcasecmp(token, "HELLO") == 0) {
+      |         ^~
+../Core/Src/main.c:76:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   76 |         {
+      |         ^
+../Core/Src/main.c:83:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   83 | {
+      | ^
+../Core/Src/main.c:100:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  100 | {
+      | ^
+../Core/Src/main.c:153:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  153 | {
+      | ^
+../Core/Src/main.c:192:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  192 | {
+      | ^
+../Core/Src/main.c:225:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  225 | {
+      | ^
+../Core/Src/main.c:243:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  243 | {
+      | ^
+../Core/Src/main.c:293:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  293 | {
+      | ^
+../Core/Src/main.c:68:13: error: old-style parameter declarations in prototyped function definition
+   68 | static void uart_process_command(char *cmd)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:320: error: expected '{' at end of input
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:58:13: warning: 'MX_GPIO_Init' declared 'static' but never defined [-Wunused-function]
+   58 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:59:13: warning: 'MX_DMA_Init' declared 'static' but never defined [-Wunused-function]
+   59 | static void MX_DMA_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c:60:13: warning: 'MX_USART2_UART_Init' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_USART2_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:68:13: warning: 'uart_process_command' defined but not used [-Wunused-function]
+   68 | static void uart_process_command(char *cmd)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:52:16: warning: 'uart_rx_buf' defined but not used [-Wunused-variable]
+   52 | static uint8_t uart_rx_buf[RX_BUFFER_LEN];
+      |                ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+16:47:17 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  14044	    112	   2432	  16588	   40cc	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+16:47:55 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15276	    112	   2432	  17820	   459c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+16:48:16 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15276	    112	   2432	  17820	   459c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+16:48:20 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15276	    112	   2432	  17820	   459c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+16:59:49 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:79:77: error: 'LED1_pin' undeclared (first use in this function); did you mean 'LED1_Pin'?
+   79 |         if (strcasecmp(token, "ON") == 0) HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_pin,1);
+      |                                                                             ^~~~~~~~
+      |                                                                             LED1_Pin
+../Core/Src/main.c:79:77: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:81:42: error: expected ')' before 'HAL_GPIO_WritePin'
+   81 |         else if (strcasecmp(token, "OFF") HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_pin,0);
+      |                 ~                        ^~~~~~~~~~~~~~~~~~
+      |                                          )
+../Core/Src/main.c:83:17: error: expected expression before '}' token
+   83 |                 }
+      |                 ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:03:36 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15416	    112	   2432	  17960	   4628	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:05:38 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15516	    112	   2432	  18060	   468c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:05:42 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15516	    112	   2432	  18060	   468c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:06:16 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:06:22 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15528	    112	   2432	  18072	   4698	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:16:28 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:93: error: expected ')' before string constant
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                       ~                                                                     ^~~~~
+      |                                                                                             )
+../Core/Src/main.c:96:33: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                               ~~^                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |                 |
+      |                                 char *            int
+      |                               %3d
+../Core/Src/main.c:96:44: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                                          ~~^
+      |                                            |
+      |                                            char *
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:19:29 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:93: error: expected ')' before string constant
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                       ~                                                                     ^~~~~
+      |                                                                                             )
+../Core/Src/main.c:96:33: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                               ~~^                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                 |                 |
+      |                                 char *            int
+      |                               %3d
+../Core/Src/main.c:96:44: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n", HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF");
+      |                                          ~~^
+      |                                            |
+      |                                            char *
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:20:22 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:33: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n"), HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF";
+      |                               ~~^
+      |                                 |
+      |                                 char *
+../Core/Src/main.c:96:44: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   96 |                 printf("LED1: %3s; LED2: %3s \n"), HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF";
+      |                                          ~~^
+      |                                            |
+      |                                            char *
+../Core/Src/main.c:96:94: error: expected ';' before string constant
+   96 |                 printf("LED1: %3s; LED2: %3s \n"), HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) "ON" : "OFF", HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) "ON" : "OFF";
+      |                                                                                              ^~~~~
+      |                                                                                              ;
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:21:32 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15728	    112	   2432	  18272	   4760	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:21:45 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15728	    112	   2432	  18272	   4760	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:24:09 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15744	    112	   2432	  18288	   4770	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:24:13 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15744	    112	   2432	  18288	   4770	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:26:39 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:26:44 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:28:16 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:24: warning: too many arguments for format [-Wformat-extra-args]
+   96 |                 printf("LED1: ; LED2: \n",
+      |                        ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15744	    112	   2432	  18288	   4770	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:28:21 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15744	    112	   2432	  18288	   4770	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:29:22 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:33: warning: unknown conversion type character ';' in format [-Wformat=]
+   96 |                 printf("LED1: %2; LED2: %2 \n",
+      |                                 ^
+../Core/Src/main.c:96:43: warning: unknown conversion type character ' ' in format [-Wformat=]
+   96 |                 printf("LED1: %2; LED2: %2 \n",
+      |                                           ^
+../Core/Src/main.c:96:24: warning: too many arguments for format [-Wformat-extra-args]
+   96 |                 printf("LED1: %2; LED2: %2 \n",
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:29:26 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:29:58 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:30:02 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:30:36 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:30:40 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:32:23 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:24: warning: too many arguments for format [-Wformat-extra-args]
+   96 |                 printf("LED1: s; LED2: s \n",
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15748	    112	   2432	  18292	   4774	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:32:27 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15748	    112	   2432	  18292	   4774	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:33:19 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:33: warning: unknown conversion type character ';' in format [-Wformat=]
+   96 |                 printf("LED1: %3; LED2: %3 \n",
+      |                                 ^
+../Core/Src/main.c:96:43: warning: unknown conversion type character ' ' in format [-Wformat=]
+   96 |                 printf("LED1: %3; LED2: %3 \n",
+      |                                           ^
+../Core/Src/main.c:96:24: warning: too many arguments for format [-Wformat-extra-args]
+   96 |                 printf("LED1: %3; LED2: %3 \n",
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:34:11 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:35:29 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:35:34 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:36:13 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:96:24: warning: too many arguments for format [-Wformat-extra-args]
+   96 |                 printf("LED1: s - LED2: s \n",
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15748	    112	   2432	  18292	   4774	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:36:43 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:41:05 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:97:25: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   97 |                         if (strcasecmp(token, "ON") == 0)
+      |                         ^~
+../Core/Src/main.c:99:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   99 |                                 HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:101:25: error: expected '}' before 'else'
+  101 |                         else if (strcasecmp(token, "OFF") == 0)
+      |                         ^~~~
+../Core/Src/main.c:101:30: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                         else if (strcasecmp(token, "OFF") == 0)
+      |                              ^~
+../Core/Src/main.c:103:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  103 |                                 HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
+      |                                 ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:107:9: error: expected identifier or '(' before 'else'
+  107 |         else if (strcasecmp(token, "stav") == 0)
+      |         ^~~~
+../Core/Src/main.c:113:1: error: expected identifier or '(' before '}' token
+  113 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:41:35 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:41:41 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15752	    112	   2432	  18296	   4778	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:42:32 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:42:38 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:44:30 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:101:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                 else if (strcasecmp(token, "OFF") == 0)
+      |                      ^~
+../Core/Src/main.c:104:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 |                         printf("OK\n");
+      |                         ^~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:44:38 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:45:33 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:101:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                 else if (strcasecmp(token, "OFF") == 0)
+      |                      ^~
+../Core/Src/main.c:104:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 |                         printf("OK\n");
+      |                         ^~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:45:37 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:48:18 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:101:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                 else if (strcasecmp(token, "OFF") == 0)
+      |                      ^~
+../Core/Src/main.c:104:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 |                         printf("pranked\n");
+      |                         ^~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15900	    112	   2432	  18444	   480c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:48:29 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15900	    112	   2432	  18444	   480c	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:49:28 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:101:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                 else if (strcasecmp(token, "OFF") == 0)
+      |                      ^~
+../Core/Src/main.c:104:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 |                         printf("OK\n");
+      |                         ^~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:49:30 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+17:51:32 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_process_command':
+../Core/Src/main.c:101:22: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  101 |                 else if (strcasecmp(token, "OFF") == 0)
+      |                      ^~
+../Core/Src/main.c:104:25: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 |                         printf("OK\n");
+      |                         ^~~~~~
+arm-none-eabi-gcc -o "cviceni5.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv5\cviceni5\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni5.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni5.elf
+ 
+arm-none-eabi-size   cviceni5.elf 
+arm-none-eabi-objdump -h -S  cviceni5.elf  > "cviceni5.list"
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni5.list
+ 
+17:52:08 **** Incremental Build of configuration Debug for project cviceni5 ****
+make -j4 all 
+arm-none-eabi-size   cviceni5.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15888	    112	   2432	  18432	   4800	cviceni5.elf
+Finished building: default.size.stdout
+ 
