@@ -66,7 +66,7 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN 0 */
 
 static void uart_process_command(char *cmd)
-	{
+{
 	char *token;
 	token = strtok(cmd, " ");
 
@@ -76,23 +76,23 @@ static void uart_process_command(char *cmd)
 	}
 
 	else if (strcasecmp(token, "LED1") == 0)
-		{
+	{
 		token = strtok(NULL, " ");
 		if (strcasecmp(token, "ON") == 0) HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 1);
 		else if (strcasecmp(token, "OFF") == 0)  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 0);
 		printf("OK\n");
-		}
+	}
 
 	else if (strcasecmp(token, "LED2") == 0)
-		{
+	{
 		token = strtok(NULL, " ");
 		if (strcasecmp(token, "ON") == 0) HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 1);
 		else if (strcasecmp(token, "OFF") == 0)  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
 		printf("OK\n");
-		}
+	}
 
 	else if (strcasecmp(token, "LEDS") == 0)
-		{
+	{
 		token = strtok(NULL, " ");
 		if (strcasecmp(token, "ON") == 0)
 			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 1),
@@ -101,15 +101,15 @@ static void uart_process_command(char *cmd)
 		else if (strcasecmp(token, "OFF") == 0)
 			HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, 0),
 			HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, 0);
-			printf("OK\n");
-			}
+		printf("OK\n");
+	}
 
 	else if (strcasecmp(token, "stav") == 0)
-		{
+	{
 		printf("LED1: %s - LED2: %s \n",
 				HAL_GPIO_ReadPin(LED1_GPIO_Port, LED1_Pin) ? "sviti" : "nesviti",
-				HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) ? "sviti" : "nesviti");
-		}
+						HAL_GPIO_ReadPin(LED2_GPIO_Port, LED2_Pin) ? "sviti" : "nesviti");
+	}
 }
 
 int _write(int file, char const *buf, int n)
