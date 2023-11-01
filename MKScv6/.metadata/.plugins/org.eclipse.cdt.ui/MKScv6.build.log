@@ -1,10 +1,10 @@
-15:53:05 **** Incremental Build of configuration Debug for project MKScv6 ****
+18:03:22 **** Incremental Build of configuration Debug for project MKScv6 ****
 make -j4 all 
 arm-none-eabi-size   MKScv6.elf 
    text	   data	    bss	    dec	    hex	filename
-  11320	     20	   1764	  13104	   3330	MKScv6.elf
+  12644	     20	   1764	  14428	   385c	MKScv6.elf
 Finished building: default.size.stdout
  
 
-15:53:05 Build Finished. 0 errors, 0 warnings. (took 320ms)
+18:03:22 Build Finished. 0 errors, 0 warnings. (took 311ms)
 

@@ -1744,3 +1744,41 @@
 2023-11-01 15:45:34,322 [INFO] CADModel:165 - CPN selected for project levelSTM32F030R8T6
 2023-11-01 15:45:34,322 [INFO] CADModel:114 - Register for checkConnection events
 2023-11-01 15:45:34,377 [INFO] OpenFileManager:328 - Restore cursor
+2023-11-01 16:48:24,358 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,457x270,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-11-01 16:49:38,006 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 389699704 Bytes (926941184)
+2023-11-01 16:49:39,763 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 405954680 Bytes (926941184)
+2023-11-01 16:49:41,176 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 456808568 Bytes (926941184)
+2023-11-01 16:49:41,410 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2023-11-01 16:49:41,410 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-01 16:49:41,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2023-11-01 16:49:41,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-01 16:49:41,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-01 16:49:41,411 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-01 16:49:41,412 [INFO] CodeGenerator:799 - code generatio: config db path: C:\appz\ST\STM32CubeIDE_1.10.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\\db\
+2023-11-01 16:49:41,643 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\license.tmp_save
+2023-11-01 16:49:41,952 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\license.tmp
+2023-11-01 16:49:42,034 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\gpio.tmp_save
+2023-11-01 16:49:42,173 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\gpio.tmp
+2023-11-01 16:49:42,424 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\stm32f0xx_it.c_save
+2023-11-01 16:49:42,661 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\stm32f0xx_it.c
+2023-11-01 16:49:42,676 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\stm32f0xx_it.h_save
+2023-11-01 16:49:42,762 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\stm32f0xx_it.h
+2023-11-01 16:49:42,785 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\stm32f0xx_hal_msp.c_save
+2023-11-01 16:49:42,929 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\stm32f0xx_hal_msp.c
+2023-11-01 16:49:42,934 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\system.tmp_save
+2023-11-01 16:49:43,015 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\MXTmpFiles\system.tmp
+2023-11-01 16:49:43,039 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\stm32f0xx_hal_conf.h_save
+2023-11-01 16:49:43,158 [INFO] CodeEngine:335 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\stm32f0xx_hal_conf.h
+2023-11-01 16:49:43,210 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\main.h_save
+2023-11-01 16:49:43,336 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Inc\main.h
+2023-11-01 16:49:43,354 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\main.c_save
+2023-11-01 16:49:43,607 [INFO] CodeEngine:279 - Generated code: C:\Temp\xhroch01\MKS\MKScv6\MKScv6\Core\Src\main.c
+2023-11-01 16:49:44,211 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 170mS.
+2023-11-01 16:49:44,214 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-01 16:49:44,422 [INFO] ConfigFileManager:1457 - The Die is : DIE440
+2023-11-01 16:49:44,430 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2023-11-01 16:49:44,470 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2023-11-01 16:49:46,258 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2044mS.
+2023-11-01 16:49:46,259 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-11-01 16:49:46,261 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-01 18:07:39,526 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
