@@ -332,3 +332,249 @@ arm-none-eabi-size   cviceni7.elf
   16204	     24	   5784	  22012	   55fc	cviceni7.elf
 Finished building: default.size.stdout
  
+16:48:52 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  15228	     24	   5784	  21036	   522c	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:16:33 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+../Core/Src/main.c:75:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   75 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:75:15: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartVisualTask':
+../Core/Src/main.c:396:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  396 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include "lis2dw12_reg.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:396:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  396 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:396:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  23376	    132	   6196	  29704	   7408	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:22:00 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:75:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   75 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:75:15: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:435:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  435 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include "lis2dw12_reg.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:435:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  435 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:435:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  24496	    132	   6196	  30824	   7868	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:27:30 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:75:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   75 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:75:15: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:435:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  435 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include "lis2dw12_reg.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:435:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  435 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:435:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  24832	    132	   6196	  31160	   79b8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:31:39 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+../Core/Src/main.c:77:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   77 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:77:15: note: (near initialization for 'lis2dw12.write_reg')
+../Core/Src/main.c: In function 'StartAcceleroTask':
+../Core/Src/main.c:454:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  454 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   25 | #include "lis2dw12_reg.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:454:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  454 |         printf("LIS2DW12_ID %s\n", (whoamI == LIS2DW12_ID) ? "OK" : "FAIL");
+      |         ^~~~~~
+../Core/Src/main.c:454:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  25520	    132	   6260	  31912	   7ca8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:32:40 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:26:10: fatal error: ../Core/Src/<stdio.h>: Invalid argument
+   26 | #include "<stdio.h>"
+      |          ^~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+17:32:49 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:15: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  25520	    132	   6260	  31912	   7ca8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:33:07 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-size   cviceni7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25520	    132	   6260	  31912	   7ca8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+17:37:00 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-size   cviceni7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25520	    132	   6260	  31912	   7ca8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+17:37:06 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-size   cviceni7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25520	    132	   6260	  31912	   7ca8	cviceni7.elf
+Finished building: default.size.stdout
+ 
+17:44:33 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/queue.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/queue.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/tasks.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/tasks.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/timers.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/timers.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/timers.o"
+arm-none-eabi-gcc "../Core/Src/freertos.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/freertos.d" -MT"Core/Src/freertos.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/freertos.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:15: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  25804	    132	   6340	  32276	   7e14	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:44:37 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-size   cviceni7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25804	    132	   6340	  32276	   7e14	cviceni7.elf
+Finished building: default.size.stdout
+ 
+17:45:40 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F030x8 -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:78:15: warning: initialization of 'int32_t (*)(void *, uint8_t,  const uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  const unsigned char *, short unsigned int)'} from incompatible pointer type 'int32_t (*)(void *, uint8_t,  uint8_t *, uint16_t)' {aka 'long int (*)(void *, unsigned char,  unsigned char *, short unsigned int)'} [-Wincompatible-pointer-types]
+   78 |  .write_reg = platform_write,
+      |               ^~~~~~~~~~~~~~
+../Core/Src/main.c:78:15: note: (near initialization for 'lis2dw12.write_reg')
+arm-none-eabi-gcc -o "cviceni7.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\Temp\xhroch01\MKS\MKScv7\cviceni7\STM32F030R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cviceni7.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cviceni7.elf
+ 
+arm-none-eabi-size   cviceni7.elf 
+arm-none-eabi-objdump -h -S  cviceni7.elf  > "cviceni7.list"
+   text	   data	    bss	    dec	    hex	filename
+  26668	    132	   6340	  33140	   8174	cviceni7.elf
+Finished building: default.size.stdout
+ 
+Finished building: cviceni7.list
+ 
+17:45:43 **** Incremental Build of configuration Debug for project cviceni7 ****
+make -j4 all 
+arm-none-eabi-size   cviceni7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26668	    132	   6340	  33140	   8174	cviceni7.elf
+Finished building: default.size.stdout
+ 
