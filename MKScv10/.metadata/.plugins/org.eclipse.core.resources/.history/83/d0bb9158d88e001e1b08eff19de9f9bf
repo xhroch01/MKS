@@ -106,25 +106,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		if (key != -1) {
+	  if (key != -1) {
 			printf("pressed: %2d, ", key);
 
 			if (key == code[pos]) {
 				pos++;
 				printf("pos = %d \n", pos);
 
-				if (pos == sizeof(code)) {
+				if(pos == sizeof(code)) {
 					HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
 					pos = 0;
 					printf("CORRECT CODE \n");
 				}
-			} else {
+			}
+			else {
 				pos = 0;
 				printf("pos = %d\n", pos);
 			}
 			HAL_Delay(250);
 			key = -1;
-		}
+	}
 
     /* USER CODE END WHILE */
 

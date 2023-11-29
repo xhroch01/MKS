@@ -1448,3 +1448,8 @@
 2023-11-29 17:11:03,161 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 2090mS.
 2023-11-29 17:11:03,162 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
 2023-11-29 17:11:03,164 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-29 17:57:19,137 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "SWV client thread" java.lang.NullPointerException: Cannot invoke "com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.isDebugging()" because "com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.plugin" is null
+2023-11-29 17:57:19,139 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVPlugin.debugTrace(SWVPlugin.java:85)
+2023-11-29 17:57:19,141 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.TRACE(SWVClient.java:768)
+2023-11-29 17:57:19,146 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.createProtocolPacket(SWVClient.java:472)
+2023-11-29 17:57:19,148 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:370)
