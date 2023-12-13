@@ -1,0 +1,10 @@
+17:31:22 **** Incremental Build of configuration Debug for project MKScv12 ****
+make -j4 all 
+arm-none-eabi-size   MKScv12.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 161752	    152	  71248	 233152	  38ec0	MKScv12.elf
+Finished building: default.size.stdout
+ 
+
+17:31:23 Build Finished. 0 errors, 0 warnings. (took 867ms)
+
